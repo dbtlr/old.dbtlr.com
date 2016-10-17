@@ -87,8 +87,7 @@ webpackConfig.postcss = [
     discardUnused : false,
     mergeIdents   : false,
     reduceIdents  : false,
-    safe          : true,
-    sourcemap     : true
+    safe          : true
   })
 ];
 
@@ -99,7 +98,7 @@ webpackConfig.module.loaders.push(
   { test: /\.ttf(\?.*)?$/,   loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=application/octet-stream' },
   { test: /\.eot(\?.*)?$/,   loader: 'file?prefix=fonts/&name=[path][name].[ext]' },
   { test: /\.svg(\?.*)?$/,   loader: 'url?prefix=fonts/&name=[path][name].[ext]&limit=10000&mimetype=image/svg+xml' },
-  { test: /\.(png|jpg)$/,    loader: 'url?limit=8192&name=img/[name]-[hash].[ext]' }
+  { test: /\.(png|jpg)$/,    loader: 'url?limit=8192&name=img/[name].[ext]' }
 );
 
 module.exports = webpackConfig;

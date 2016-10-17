@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import '../styles/core.scss';
+import './styles/core.scss';
 
 
 ReactDOM.render((
