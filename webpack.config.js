@@ -26,7 +26,7 @@ webpackConfig.plugins = [
     title    : 'Drew Butler | Techincal Advisor and Website Developer',
     template : './src/index.html',
     hash     : false,
-    favicon  : null, //paths.client('static/favicon.ico'),
+    favicon  : './src/static/favicon.ico',
     filename : 'index.html',
     inject   : 'body',
     minify   : {
