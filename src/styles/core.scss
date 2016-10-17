@@ -15,9 +15,9 @@ body {
   font-size: 22px;
   line-height: 1.8em;
   background-color: #FFFFFF;
-  h1 { color: #fff; }
+
   h4 { color: #AAEFDF; }
-  color: #fff;
+
   strong { color: #9EE37D; }
 }
 
@@ -36,16 +36,51 @@ body {
   }
 }
 
-a { color: #CFFCFF; &:hover, &:visited, &:active { color: #CFFCFF; } }
-
 header {
   margin-bottom: 2.2em;
 
-  h1 { font-size: 4em; margin-bottom: 0.2em; }
-  h4 { font-size: 2em; }
+  h1 {
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 0.2em;
+
+    &::selection {
+      background-color: #AAEFDF;
+    }
+  }
+  h4 {
+    font-size: 2em;
+    &::selection {
+      background-color: #aaa;
+    }
+  }
 }
 
-p { font-family: 'Open Sans', sans-serif; margin-bottom: 1.5em; }
+p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1.5em;
+
+  &::selection {
+    background-color: #AAEFDF;
+  }
+
+  strong::selection {
+    background-color: #aaa;
+  }
+
+  a {
+    color: #CFFCFF;
+
+    &:hover, &:visited, &:active {
+      color: #CFFCFF;
+    }
+
+    &::selection {
+      background-color: #aaa;
+    }
+  }
+}
 
 
 *,
