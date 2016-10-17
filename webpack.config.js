@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 const cssnano = require('cssnano');
 
 const webpackConfig = {
@@ -32,7 +33,12 @@ webpackConfig.plugins = [
     minify   : {
       collapseWhitespace : true
     }
-  })
+  }),
+  new CopyWebpackPlugin([{
+    from: './config/CNAME',
+    force: true
+
+  }], { copyUnmodified: true })
 ];
 
 webpackConfig.module.loaders = [{
