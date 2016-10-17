@@ -27,18 +27,23 @@ webpackConfig.plugins = [
     title    : 'Drew Butler | Techincal Advisor and Website Developer',
     template : './src/index.html',
     hash     : false,
-    favicon  : './src/static/favicon.ico',
+    favicon  : './src/assets/favicon.ico',
     filename : 'index.html',
     inject   : 'body',
     minify   : {
       collapseWhitespace : true
     }
   }),
-  new CopyWebpackPlugin([{
-    from: './config/CNAME',
-    force: true
-
-  }], { copyUnmodified: true })
+  new CopyWebpackPlugin([
+    {
+      from: './config/CNAME'
+    },
+    {
+      from: './src/assets/*.jpg',
+      to: 'img',
+      flatten: true
+    }
+  ])
 ];
 
 webpackConfig.module.loaders = [{
