@@ -2,7 +2,7 @@
 
 A small React application that hosts my domain card for http://dbtlr.com.
 
-Why React? Not for any real technical reason, mostly just playing around with have a simple React application that is compiled by Webpack. Honestly, this could have been a static HTML page, but this was more fun to put together.
+Why React? Not for any real technical reason, mostly just playing around with having a simple React application that is compiled by Webpack. Honestly, this could have been a static HTML page, but this was more fun to put together.
 
 ## Main technologies used
 
