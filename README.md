@@ -16,3 +16,4 @@ Why React? Not for any real technical reason, mostly just playing around with ha
 - React driven contact page
 - Activity feed read off of APIs from other sites (blogs, twitter, etc)
 - Auto-generated /now page
+- Realtime resume / profile / timeline
